@@ -26,7 +26,7 @@ Nuestro objetivo es proporcionar a los practicantes de BJJ una amplia gama de pr
 ¡Agradecemos cualquier contribución para mejorar la plataforma! Si deseas colaborar en este proyecto, siéntete libre de enviar Pull Requests (PR) para correcciones, mejoras, o nuevas características.
 
 ## Contacto
-Para obtener más información o asistencia, contáctanos a través de [correo electrónico](ggvegetti@gmail.com) o visítanos en nuestra [página web](https://www.bjjwear.com).
+Para obtener más información o asistencia, contáctanos a través de [correo electrónico](ggvegetti@gmail.com) o visítanos en nuestra [página web]( https://ginavegetti.github.io/BJJWEAR/).
 
 ¡Gracias por tu interés en BJJWEAR!
 
