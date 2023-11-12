@@ -141,11 +141,7 @@ header {
   padding: 30px;
   display: flex;
   justify-content: center; }
-  .formulario-contacto h2 {
-    text-align: center;
-    color: #acab9e;
-    font-size: 40px; }
-  .formulario-contacto label {
+  .formulario-contacto div label {
     color: #acab9e;
     font-size: 15px;
     width: 25px;
@@ -153,20 +149,24 @@ header {
     text-align: center;
     display: flex;
     align-items: center; }
-  .formulario-contacto input,
-  .formulario-contacto textarea {
+  .formulario-contacto div input,
+  .formulario-contacto div textarea {
     width: 519px;
     background-color: transparent;
     border: solid #acab9e 0.5px;
     color: white;
     font-size: 18px; }
-  .formulario-contacto #enviar {
+  .formulario-contacto div #enviar {
     width: 100%;
     background-color: white;
     font-size: 20px;
     border: solid white 3px;
     color: black;
     margin-top: 10px; }
+  .formulario-contacto h2 {
+    text-align: center;
+    color: #acab9e;
+    font-size: 40px; }
 
 /*!--------NOSOTROS------*/
 .presentacion-nosotros {
@@ -200,17 +200,25 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 35px 710px; }
-  .politica-devolucion h2 {
-    text-align: start;
-    color: #acab9e;
-    font-size: 25px; }
-  .politica-devolucion p {
-    color: white;
-    font-size: 15px;
-    text-align: justify;
-    margin: 30px;
-    width: 700px;
-    height: 100%; }
+  .politica-devolucion .devolucion-titulo {
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    .politica-devolucion .devolucion-titulo h2 {
+      text-align: start;
+      color: #acab9e;
+      font-size: 25px; }
+  .politica-devolucion .devolucion-p {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .politica-devolucion .devolucion-p p {
+      color: white;
+      font-size: 15px;
+      text-align: justify;
+      margin: 30px;
+      width: 700px;
+      height: 100%; }
 
 /*!---------FOOTER-------*/
 footer div {
@@ -256,22 +264,22 @@ footer div {
     font-size: 10px;
     padding: 15px; } }
 
-@media screen and (max-width: 850px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .presentacion-nosotros {
     height: 200px; }
   .formulario-contacto {
     padding: 25px; }
     .formulario-contacto h2 {
       font-size: 35px; }
-    .formulario-contacto label {
+    .formulario-contacto div label {
       font-size: 15px;
       width: 20px;
       height: 20px; }
-    .formulario-contacto input,
-    .formulario-contacto textarea {
+    .formulario-contacto div input,
+    .formulario-contacto div textarea {
       width: 500px;
       font-size: 18px; }
-    .formulario-contacto #enviar {
+    .formulario-contacto div #enviar {
       font-size: 20px;
       margin-top: 10px; }
   .politica-devolucion .devolucion-titulo h2 {
@@ -281,7 +289,7 @@ footer div {
     margin: 30px;
     width: 500px; } }
 
-@media screen and (max-width: 850px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .hero {
     height: 200px; }
     .hero h2 {
@@ -297,35 +305,41 @@ footer div {
     .productos .targetas-prod div h3 {
       font-size: 15px; }
   .productos h3 {
-    font-size: 12px; } }
-
-@media screen and (max-width: 850px) {
-  .presentacion-nosotros {
-    height: 200px; }
-    .presentacion-nosotros h2 {
-      font-size: 20px; }
-    .presentacion-nosotros h3 {
-      font-size: 15px; }
+    font-size: 12px; }
+  .presentacion-nosotros h2 {
+    font-size: 18px; }
+  .presentacion-nosotros h3 {
+    font-size: 13px; }
   .formulario-contacto {
     padding: 10px; }
     .formulario-contacto h2 {
       font-size: 25px; }
-    .formulario-contacto label {
+    .formulario-contacto div label {
       font-size: 10px;
       width: 15px;
       height: 15px; }
-    .formulario-contacto input,
-    .formulario-contacto textarea {
+    .formulario-contacto div input,
+    .formulario-contacto div textarea {
       width: 400px;
       font-size: 15px; }
-    .formulario-contacto #enviar {
+    .formulario-contacto div #enviar {
       font-size: 15px;
       margin-top: 5px; }
-  .politica-devolucion p {
+  .politica-devolucion .devolucion-p p {
     font-size: 12px; }
   footer div a img {
     width: 50px;
     height: 50px; } }
+
+@media screen and (max-width: 590px) {
+  .politica-devolucion {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+    .politica-devolucion .devolucion-p {
+      margin: 15px; }
+    .politica-devolucion .devolucion-titulo {
+      height: 20px; } }
 
 @media screen and (max-width: 550px) {
   .logo img {
@@ -337,11 +351,11 @@ footer div {
   .form-control {
     width: 70px;
     height: 30px;
-    font-size: 10px; }
-  .politica-devolucion p {
-    font-size: 12px; } }
+    font-size: 10px; } }
 
 @media screen and (max-width: 500px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/kimono.negro.2.jpg); }
   .productos .targetas-prod .p-uno img,
   .productos .targetas-prod .p-dos img,
   .productos .targetas-prod .p-tres img,
@@ -349,29 +363,13 @@ footer div {
     width: 200px;
     height: 190px; }
   .presentacion-nosotros {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kimono.blanco.jpg); }
-  .politica-devolucion h2 {
-    font-size: 15px; }
-  .politica-devolucion p {
-    font-size: 10px; } }
+    height: 150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kimono.blanco.jpg); } }
 
 @media screen and (max-width: 450px) {
   .formulario-contacto h2 {
     font-size: 20px; }
-  .formulario-contacto input {
-    width: 300px;
-    font-size: 15px; }
-  .formulario-contacto textarea {
+  .formulario-contacto div input,
+  .formulario-contacto div textarea {
     width: 300px;
     font-size: 15px; } }
-
-@media screen and (max-width: 400px) {
-  .politica-devolucion {
-    padding: 10px;
-    display: flex;
-    flex-direction: column; }
-    .politica-devolucion .devolucion-p {
-      width: 300px;
-      margin: 15px; }
-    .politica-devolucion .devolucion-titulo {
-      height: 20px; } }

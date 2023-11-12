@@ -43,6 +43,7 @@
             padding: 10px;
             font-size: 20px;
         }
+
         .targetas-prod {
             display: grid;
             grid-template-areas:
@@ -50,16 +51,19 @@
                 "p-dos"
                 "p-cuatro"
                 "p-tres";
+
             h3 {
-                    font-size: 15px;
-                    padding: 5px;
-                }
+                font-size: 15px;
+                padding: 5px;
+            }
         }
+
         h3 {
             font-size: 10px;
             padding: 15px;
         }
     }
+}
 
 
 
@@ -75,33 +79,40 @@
             font-size: 35px;
         }
 
-        label {
-            font-size: 15px;
-            width: 20px;
-            height: 20px;
-        }
+        div {
+            label {
+                font-size: 15px;
+                width: 20px;
+                height: 20px;
+            }
 
-        input,
-        textarea {
-            width: 500px;
-            font-size: 18px;
-        }
+            input,
+            textarea {
+                width: 500px;
+                font-size: 18px;
+            }
 
-        #enviar {
-            font-size: 20px;
-            margin-top: 10px;
+            #enviar {
+                font-size: 20px;
+                margin-top: 10px;
+            }
         }
     }
 
+
     .politica-devolucion {
-        .devolucion-titulo h2 {
-            font-size: 20px;
+        .devolucion-titulo {
+            h2 {
+                font-size: 20px;
+            }
         }
 
-        .devolucion-p p {
-            font-size: 15px;
-            margin: 30px;
-            width: 500px;
+        .devolucion-p {
+            p {
+                font-size: 15px;
+                margin: 30px;
+                width: 500px;
+            }
         }
     }
 }
@@ -115,40 +126,41 @@
             font-size: 50px;
         }
     }
-    .productos{
+
+    .productos {
         .targetas-prod {
-            div{
+            div {
                 margin: 10px;
-            .p-uno,
-            .p-dos,
-            .p-tres,
-            .p-cuatro{  
-                img {
-                    width: 300px;
-                    height: 200px;
+
+                .p-uno,
+                .p-dos,
+                .p-tres,
+                .p-cuatro {
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
                 }
-            }
+
                 h3 {
                     font-size: 15px;
-                    }
+                }
             }
         }
+
         h3 {
             font-size: 12px;
         }
-        }
-    
     }
 
     .presentacion-nosotros {
-        height: 200px;
 
         h2 {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         h3 {
-            font-size: 15px;
+            font-size: 13px;
         }
     }
 
@@ -159,33 +171,53 @@
             font-size: 25px;
         }
 
-        label {
-            font-size: 10px;
-            width: 15px;
-            height: 15px;
-        }
+        div {
+            label {
+                font-size: 10px;
+                width: 15px;
+                height: 15px;
+            }
 
-        input,
-        textarea {
-            width: 400px;
-            font-size: 15px;
-        }
+            input,
+            textarea {
+                width: 400px;
+                font-size: 15px;
+            }
 
-        #enviar {
-            font-size: 15px;
-            margin-top: 5px;
+            #enviar {
+                font-size: 15px;
+                margin-top: 5px;
+            }
         }
     }
 
     .politica-devolucion {
-        p {
-            font-size: 12px;
+        .devolucion-p {
+            p {
+                font-size: 12px;
+            }
         }
     }
 
     footer div a img {
         width: 50px;
         height: 50px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .politica-devolucion {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .devolucion-p {
+            margin: 15px;
+        }
+
+        .devolucion-titulo {
+            height: 20px;
+        }
     }
 }
 
@@ -213,16 +245,16 @@
         font-size: 10px;
     }
 
-    .politica-devolucion {
-        p {
-            font-size: 12px;
-        }
-    }
 }
 
 @media screen and (max-width: 500px) {
-    .productos{
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/kimono.negro.2.jpg);
+    }
+
+    .productos {
         .targetas-prod {
+
             .p-uno,
             .p-dos,
             .p-tres,
@@ -233,21 +265,13 @@
                 }
             }
         }
-        }
+    }
 
     .presentacion-nosotros {
+        height: 150px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kimono.blanco.jpg);
     }
 
-    .politica-devolucion {
-        h2 {
-            font-size: 15px;
-        }
-
-        p {
-            font-size: 10px;
-        }
-    }
 }
 
 
@@ -257,31 +281,15 @@
             font-size: 20px;
         }
 
-        input {
-            width: 300px;
-            font-size: 15px;
-        }
+        div {
 
-        textarea {
-            width: 300px;
-            font-size: 15px;
-        }
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .politica-devolucion {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-
-        .devolucion-p {
-            width: 300px;
-            margin: 15px;
-        }
-
-        .devolucion-titulo {
-            height: 20px;
+            & input,
+            & textarea {
+                width: 300px;
+                font-size: 15px;
+            }
         }
     }
 }
+
+
