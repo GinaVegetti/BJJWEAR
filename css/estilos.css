@@ -128,7 +128,10 @@ header {
       .productos .targetas-prod div img {
         object-fit: cover;
         width: 400px;
-        height: 300px; }
+        height: 300px;
+        transition: transform 0.3s ease; }
+        .productos .targetas-prod div img:hover {
+          transform: scale(1.1); }
       .productos .targetas-prod div h3 {
         color: #acab9e;
         font-size: 18px;
