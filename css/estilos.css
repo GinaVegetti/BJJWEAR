@@ -241,7 +241,8 @@ header {
     .contenedor-galeria .grid-items div {
       flex: 1 1 calc(33.33% - 20px);
       margin-bottom: 20px;
-      position: relative; }
+      position: relative;
+      text-align: center; }
       .contenedor-galeria .grid-items div img {
         width: auto;
         height: 100%;
