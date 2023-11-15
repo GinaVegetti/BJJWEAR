@@ -7,7 +7,7 @@ $font-family: 'Nanum Myeongjo', serif;
 $font-size-small: 10px;
 $font-size-medium: 18px;
 $font-size-large: 24px;
-$gutter: 20px; // Espacio entre elementos
+$gutter: 25px; // Espacio entre elementos
 
 @mixin flex-container($justify-content, $align-items) {
     display: flex;

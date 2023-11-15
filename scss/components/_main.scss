@@ -220,11 +220,11 @@
     padding: 20px;
     background-color: $color-black;
 
-
     h2 {
         text-align: center;
         color: $color-white;
         font-size: $font-size-large;
+        padding: 10px;
     }
 
     .grid-items {
@@ -239,25 +239,23 @@
             text-align: center;
 
             img {
-                width: auto;
-                height: 100%;
-                transition: transform 0.3s ease; 
+                width: 300px;
+                height: auto;
+                transition: transform 0.3s ease;
+
                 &:hover {
-                    transform: scale(1.1); 
+                    transform: scale(1.1);
                 }
             }
 
             h3 {
-                text-align: center;
                 color: $color-gris;
                 font-size: $font-size-medium;
                 padding: 10px;
                 position: absolute;
                 bottom: 0;
-                background-color: rgba(0, 0, 0, 0.7);
-                width: 100%;
                 left: 0;
-                right: 0; 
+                right: 0;
                 background-color: rgba(0, 0, 0, 0.7);
                 margin: 0;
             }

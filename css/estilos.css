@@ -233,31 +233,29 @@ header {
   .contenedor-galeria h2 {
     text-align: center;
     color: white;
-    font-size: 24px; }
+    font-size: 24px;
+    padding: 10px; }
   .contenedor-galeria .grid-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
     .contenedor-galeria .grid-items div {
-      flex: 1 1 calc(33.33% - 20px);
-      margin-bottom: 20px;
+      flex: 1 1 calc(33.33% - 25px);
+      margin-bottom: 25px;
       position: relative;
       text-align: center; }
       .contenedor-galeria .grid-items div img {
-        width: auto;
-        height: 100%;
+        width: 300px;
+        height: auto;
         transition: transform 0.3s ease; }
         .contenedor-galeria .grid-items div img:hover {
           transform: scale(1.1); }
       .contenedor-galeria .grid-items div h3 {
-        text-align: center;
         color: #acab9e;
         font-size: 18px;
         padding: 10px;
         position: absolute;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.7);
