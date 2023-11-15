@@ -213,12 +213,12 @@
         }
     }
 }
+
 /*!--------PRODUCTOS-------*/
 .contenedor-galeria {
     margin: 0;
     padding: 20px;
     background-color: $color-black;
-
 
 
     h2 {
@@ -232,26 +232,34 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        .grid-item {
+        div {
             flex: 1 1 calc(33.33% - #{$gutter});
             margin-bottom: $gutter;
+            position: relative;
 
             img {
-                max-width: 100%;
-                height: 400px;
+                width: auto;
+                height: 100%;
+                transition: transform 0.3s ease; 
+                &:hover {
+                    transform: scale(1.1); 
+                }
             }
 
             h3 {
                 text-align: center;
                 color: $color-gris;
                 font-size: $font-size-medium;
-                padding: 5px;
+                padding: 10px;
                 position: absolute;
                 bottom: 0;
                 background-color: rgba(0, 0, 0, 0.7);
                 width: 100%;
+                left: 0;
+                right: 0; 
+                background-color: rgba(0, 0, 0, 0.7);
+                margin: 0;
             }
         }
     }
 }
-

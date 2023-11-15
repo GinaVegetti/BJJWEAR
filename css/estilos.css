@@ -238,21 +238,29 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-    .contenedor-galeria .grid-items .grid-item {
+    .contenedor-galeria .grid-items div {
       flex: 1 1 calc(33.33% - 20px);
-      margin-bottom: 20px; }
-      .contenedor-galeria .grid-items .grid-item img {
-        max-width: 100%;
-        height: 400px; }
-      .contenedor-galeria .grid-items .grid-item h3 {
+      margin-bottom: 20px;
+      position: relative; }
+      .contenedor-galeria .grid-items div img {
+        width: auto;
+        height: 100%;
+        transition: transform 0.3s ease; }
+        .contenedor-galeria .grid-items div img:hover {
+          transform: scale(1.1); }
+      .contenedor-galeria .grid-items div h3 {
         text-align: center;
         color: #acab9e;
         font-size: 18px;
-        padding: 5px;
+        padding: 10px;
         position: absolute;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.7);
-        width: 100%; }
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0; }
 
 /*!---------FOOTER-------*/
 footer div {
