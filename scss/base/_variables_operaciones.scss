@@ -1,11 +1,13 @@
 // Variables
 $color-black: black;
 $color-white: white;
+$color-gris:rgb(172, 171, 158);
 $color-yellow: rgba(233, 230, 36, 0.966);
 $font-family: 'Nanum Myeongjo', serif;
 $font-size-small: 10px;
-$font-size-medium: 15px;
-$font-size-large: 20px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+$gutter: 20px; // Espacio entre elementos
 
 @mixin flex-container($justify-content, $align-items) {
     display: flex;

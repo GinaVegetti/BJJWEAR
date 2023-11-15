@@ -112,18 +112,23 @@ header {
     background-color: black;
     gap: 10px;
     justify-content: center; }
-    .productos .targetas-prod .p-uno img,
-    .productos .targetas-prod .p-dos img,
-    .productos .targetas-prod .p-tres img,
-    .productos .targetas-prod .p-cuatro img {
-      object-fit: cover;
-      width: 400px;
-      height: 300px; }
+    .productos .targetas-prod .p-uno {
+      grid-area: p-uno; }
+    .productos .targetas-prod .p-dos {
+      grid-area: p-dos; }
+    .productos .targetas-prod .p-tres {
+      grid-area: p-tres; }
+    .productos .targetas-prod .p-cuatro {
+      grid-area: p-cuatro; }
     .productos .targetas-prod div {
       background-color: black;
       text-align: center;
       margin: 15px;
       position: relative; }
+      .productos .targetas-prod div img {
+        object-fit: cover;
+        width: 400px;
+        height: 300px; }
       .productos .targetas-prod div h3 {
         color: #acab9e;
         font-size: 18px;
@@ -219,6 +224,35 @@ header {
       margin: 30px;
       width: 700px;
       height: 100%; }
+
+/*!--------PRODUCTOS-------*/
+.contenedor-galeria {
+  margin: 0;
+  padding: 20px;
+  background-color: black; }
+  .contenedor-galeria h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px; }
+  .contenedor-galeria .grid-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .contenedor-galeria .grid-items .grid-item {
+      flex: 1 1 calc(33.33% - 20px);
+      margin-bottom: 20px; }
+      .contenedor-galeria .grid-items .grid-item img {
+        max-width: 100%;
+        height: 400px; }
+      .contenedor-galeria .grid-items .grid-item h3 {
+        text-align: center;
+        color: #acab9e;
+        font-size: 18px;
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%; }
 
 /*!---------FOOTER-------*/
 footer div {
