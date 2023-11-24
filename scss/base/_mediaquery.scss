@@ -109,7 +109,6 @@
 
         .devolucion-p {
             p {
-                font-size: 15px;
                 margin: 30px;
                 width: 500px;
             }
@@ -193,6 +192,16 @@
 
     .politica-devolucion {
         .devolucion-p {
+            h3 {
+                font-size: 12px;
+            }
+
+            ol {
+                li {
+                    font-size: 12px;
+                }
+            }
+
             p {
                 font-size: 12px;
             }
@@ -208,11 +217,13 @@
 @media screen and (max-width: 590px) {
     .politica-devolucion {
         padding: 10px;
-        display: flex;
-        flex-direction: column;
 
         .devolucion-p {
             margin: 15px;
+
+            p {
+                width: 300px;
+            }
         }
 
         .devolucion-titulo {
@@ -291,5 +302,3 @@
         }
     }
 }
-
-
