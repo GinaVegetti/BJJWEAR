@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Nanum Myeongjo', serif; }
+  font-family: 'Nanum Myeongjo', serif;
+  background-color: black; }
 
 /*!------HEADER--------*/
 header {
@@ -18,51 +19,45 @@ header {
     justify-content: center; }
   header .barra-nav {
     background-color: black; }
-  header .logo img {
-    width: 110px;
-    height: 110px; }
-  header .navbar .nav-item .nav-link {
-    color: #acab9e; }
-  header .boton-b {
-    color: #acab9e; }
-    header .boton-b:hover {
-      background-color: rgba(233, 230, 36, 0.966);
-      color: black; }
-  header .navbar .nav-item .nav-link.active {
-    color: #acab9e; }
-  header .nav ul li a {
-    color: #acab9e;
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 20px;
-    margin: 15px; }
-  header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.disabled {
-    display: none; }
-  header .navbar-toggler {
-    border: none;
-    background-color: #000; }
-    header .navbar-toggler:focus {
-      outline: none; }
-    header .navbar-toggler .navbar-toggler-icon {
-      background-color: rgba(233, 230, 36, 0.966); }
-      header .navbar-toggler .navbar-toggler-icon:before, header .navbar-toggler .navbar-toggler-icon:after {
+    header .barra-nav .container-fluid .logo img {
+      width: 110px;
+      height: 110px; }
+    header .barra-nav .container-fluid .navbar-toggler {
+      border: none;
+      background-color: black; }
+      header .barra-nav .container-fluid .navbar-toggler:focus {
+        outline: none; }
+      header .barra-nav .container-fluid .navbar-toggler .navbar-toggler-icon {
         background-color: rgba(233, 230, 36, 0.966); }
-  header .collapse.navbar-collapse {
-    background-color: #000;
-    border: none;
-    padding: 10px; }
-  header .navbar-nav {
-    margin-top: 10px; }
-    header .navbar-nav .nav-link {
-      color: #acab9e; }
-      header .navbar-nav .nav-link.active {
-        font-weight: bold;
-        color: #acab9e; }
-  header .navbar-form {
-    background-color: #000;
-    padding: 10px; }
-    header .navbar-form input[type="text"] {
+        header .barra-nav .container-fluid .navbar-toggler .navbar-toggler-icon:before, header .barra-nav .container-fluid .navbar-toggler .navbar-toggler-icon:after {
+          background-color: rgba(233, 230, 36, 0.966); }
+    header .barra-nav .container-fluid .nav {
       background-color: black;
-      color: #acab9e; }
+      border: none;
+      padding: 10px; }
+      header .barra-nav .container-fluid .nav .navbar-nav {
+        margin-top: 10px; }
+        header .barra-nav .container-fluid .nav .navbar-nav .nav-item .nav-link {
+          color: #acab9e;
+          font-family: 'Nanum Myeongjo', serif;
+          font-size: 20px;
+          margin: 15px; }
+          header .barra-nav .container-fluid .nav .navbar-nav .nav-item .nav-link.active {
+            font-weight: bold;
+            color: #acab9e; }
+        header .barra-nav .container-fluid .nav .navbar-nav .nav-item .disabled {
+          display: none; }
+      header .barra-nav .container-fluid .nav .navbar-form {
+        background-color: black;
+        padding: 10px; }
+        header .barra-nav .container-fluid .nav .navbar-form input[type="search"] {
+          background-color: black;
+          color: #acab9e; }
+        header .barra-nav .container-fluid .nav .navbar-form .boton-b {
+          color: #acab9e; }
+          header .barra-nav .container-fluid .nav .navbar-form .boton-b:hover {
+            background-color: rgba(233, 230, 36, 0.966);
+            color: black; }
 
 /*!------MAIN INICIO--------*/
 .hero {
@@ -89,17 +84,14 @@ header {
 
 /*!---------PRODUCTOS INDEX-------*/
 .productos {
-  margin: 0;
-  background-color: #000; }
+  margin: 0; }
   .productos h2 {
-    background-color: black;
     color: #acab9e;
     text-align: center;
     padding: 15px;
     font-size: 25px;
     margin: 0; }
   .productos h3 {
-    background-color: black;
     color: #acab9e;
     text-align: center;
     padding: 15px;
@@ -109,7 +101,6 @@ header {
     width: 100%;
     display: grid;
     grid-template-areas: "p-uno p-dos" "p-tres p-cuatro";
-    background-color: black;
     gap: 10px;
     justify-content: center; }
     .productos .targetas-prod .p-uno {
@@ -121,16 +112,15 @@ header {
     .productos .targetas-prod .p-cuatro {
       grid-area: p-cuatro; }
     .productos .targetas-prod div {
-      background-color: black;
       text-align: center;
       margin: 15px;
       position: relative; }
-      .productos .targetas-prod div img {
+      .productos .targetas-prod div a img {
         object-fit: cover;
         width: 400px;
         height: 300px;
         transition: transform 0.3s ease; }
-        .productos .targetas-prod div img:hover {
+        .productos .targetas-prod div a img:hover {
           transform: scale(1.1); }
       .productos .targetas-prod div h3 {
         color: #acab9e;
@@ -144,7 +134,6 @@ header {
 /*!---------CONTACTO-------*/
 .formulario-contacto {
   width: 100%;
-  background-color: black;
   height: 100vh;
   padding: 30px;
   display: flex;
@@ -166,11 +155,17 @@ header {
     font-size: 18px; }
   .formulario-contacto div #enviar {
     width: 100%;
-    background-color: white;
     font-size: 20px;
-    border: solid white 3px;
-    color: black;
-    margin-top: 10px; }
+    margin-top: 10px;
+    background-color: black;
+    color: #acab9e;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out; }
+    .formulario-contacto div #enviar:hover {
+      background-color: rgba(233, 230, 36, 0.966);
+      color: black; }
   .formulario-contacto h2 {
     text-align: center;
     color: #acab9e;
@@ -203,7 +198,6 @@ header {
 .politica-devolucion {
   width: 100%;
   height: 100%;
-  background-color: black;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
@@ -231,8 +225,7 @@ header {
 /*!--------PRODUCTOS-------*/
 .contenedor-galeria {
   margin: 0;
-  padding: 20px;
-  background-color: black; }
+  padding: 20px; }
   .contenedor-galeria h2 {
     text-align: center;
     color: white;
@@ -247,11 +240,11 @@ header {
       margin-bottom: 25px;
       position: relative;
       text-align: center; }
-      .contenedor-galeria .grid-items div img {
+      .contenedor-galeria .grid-items div a img {
         width: 300px;
         height: auto;
         transition: transform 0.3s ease; }
-        .contenedor-galeria .grid-items div img:hover {
+        .contenedor-galeria .grid-items div a img:hover {
           transform: scale(1.1); }
       .contenedor-galeria .grid-items div h3 {
         color: #acab9e;
@@ -264,17 +257,67 @@ header {
         background-color: rgba(0, 0, 0, 0.7);
         margin: 0; }
 
+/*!--------KIMONO BLANCO-------*/
+.product {
+  max-width: 950px;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .product h2 {
+    color: #acab9e;
+    font-size: 24px;
+    margin-bottom: 10px; }
+  .product p {
+    color: white; }
+  .product .image-carousel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    .product .image-carousel img {
+      width: 100%;
+      transition: transform 0.5s ease-in-out; }
+    .product .image-carousel img:nth-child(1) {
+      order: 1; }
+    .product .image-carousel img:nth-child(2) {
+      order: 2; }
+  .product .buy-button {
+    margin-top: 15px;
+    display: block;
+    width: 100px;
+    padding: 15px;
+    background-color: black;
+    color: #acab9e;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out; }
+    .product .buy-button:hover {
+      background-color: rgba(233, 230, 36, 0.966);
+      color: black; }
+
+#imageCarousel {
+  max-width: 400px;
+  margin: 0 auto; }
+  #imageCarousel .carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; }
+
 /*!---------FOOTER-------*/
-footer div {
-  margin: 0;
-  background-color: rgba(233, 230, 36, 0.966);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; }
-  footer div a img {
-    width: 65px;
-    height: 65px;
-    padding: 15px; }
+footer {
+  bottom: 0;
+  width: 100%;
+  position: relative; }
+  footer div {
+    margin: 0;
+    background-color: rgba(233, 230, 36, 0.966);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    footer div a img {
+      width: 65px;
+      height: 65px;
+      padding: 15px; }
 
 /*!------MEDIAQUERY-----*/
 @media screen and (max-width: 950px) {

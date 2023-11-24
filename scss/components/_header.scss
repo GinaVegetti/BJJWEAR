@@ -1,10 +1,11 @@
 /*!------HEADER--------*/
+
 header {
-    background-color: black;
+    background-color: $color-black;
     padding: 10px;
 
     h1 {
-        color: rgb(172, 171, 158);
+        color: $color-gris;
         font-size: 55px;
         text-align: center;
         display: flex;
@@ -12,86 +13,78 @@ header {
     }
 
     .barra-nav {
-        background-color: black;
-    }
-
-    .logo img {
-        width: 110px;
-        height: 110px;
-    }
-
-    .navbar .nav-item .nav-link {
-        color: rgb(172, 171, 158);
-    }
-
-    .boton-b {
-        color: rgb(172, 171, 158);
-
-        &:hover {
-            background-color: rgba(233, 230, 36, 0.966);
-            color: black;
-        }
-    }
-
-    .navbar .nav-item .nav-link.active {
-        color: rgb(172, 171, 158);
-    }
-
-    .nav ul li a {
-        color: rgb(172, 171, 158);
-        font-family: 'Nanum Myeongjo', serif;
-        font-size: 20px;
-        margin: 15px;
-    }
-
-    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.disabled {
-        display: none;
-    }
-
-    .navbar-toggler {
-        border: none;
-        background-color: #000;
-
-        &:focus {
-            outline: none;
-        }
-
-        .navbar-toggler-icon {
-            background-color: rgba(233, 230, 36, 0.966);
-
-            &:before,
-            &:after {
-                background-color: rgba(233, 230, 36, 0.966);
+        background-color: $color-black;
+    
+        .container-fluid {
+            .logo img {
+                width: 110px;
+                height: 110px;
             }
-        }
-    }
-
-    .collapse.navbar-collapse {
-        background-color: #000;
-        border: none;
-        padding: 10px;
-    }
-
-    .navbar-nav {
-        margin-top: 10px;
-
-        .nav-link {
-            color: rgb(172, 171, 158);
-
-            &.active {
-                font-weight: bold;
-                color: rgb(172, 171, 158);
+    
+            .navbar-toggler {
+                border: none;
+                background-color: $color-black;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+                .navbar-toggler-icon {
+                    background-color: $color-yellow;
+    
+                    &:before,
+                    &:after {
+                        background-color: $color-yellow;
+                    }
+                }
             }
-        }
-    }
-
-    .navbar-form {
-        background-color: #000;
-        padding: 10px;
-
-        input[type="text"] {
-            background-color: black;
-            color: rgb(172, 171, 158);
+    
+            .nav {
+                background-color: $color-black;
+                border: none;
+                padding: 10px;
+    
+                .navbar-nav {
+                    margin-top: 10px;
+    
+                    .nav-item {
+                        .nav-link {
+                            color: $color-gris;
+                            font-family: 'Nanum Myeongjo', serif;
+                            font-size: 20px;
+                            margin: 15px;
+    
+                            &.active {
+                                font-weight: bold;
+                                color: rgb(172, 171, 158);
+                            }
+                        }
+    
+                        .disabled {
+                            display: none;
+                        }
+                    }
+                }
+    
+                .navbar-form {
+                    background-color: $color-black;
+                    padding: 10px;
+    
+                    input[type="search"] {
+                        background-color: $color-black;
+                        color: $color-gris;
+                    }
+    
+                    .boton-b {
+                        color: $color-gris;
+    
+                        &:hover {
+                            background-color: $color-yellow;
+                            color: black;
+                        }
+                    }
+                }
+            }
         }
     }
 }

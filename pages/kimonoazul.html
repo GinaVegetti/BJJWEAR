@@ -10,12 +10,14 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!----CSS---->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-----FAVICON-->
     <link rel="icon" href="../img/b-high-resolution-logo-black-transparent.png" type="image/png">
     <!------KEYWORDS----->
     <meta name="keywords"
-        content="kimono, rash, guards, bjj, Jiu-Jitsu, displina, deporte, gi, contacto, ubicacion, telefono">
+        content="kimono, rash, guards, bjj, Jiu-Jitsu, displina, deporte, gi, faixa, estilos, rashguards, grappling, shorts, productos">
     <!---DESCRIPCION-->
-    <meta name="description" content="Contacto de la tienda BJJWEAR para cualquier consulta para tu compra.">
+    <meta name="description"
+        content="Tienda en línea especializada en la venta de ropa y equipamiento para la práctica de Brazilian Jiu-Jitsu (BJJ).">
     <!-----OPEN GRAPH TYPE----->
     <meta property="og:type" content="E-commerce">
     <!-----OPEN GRAPH TITLE----->
@@ -25,7 +27,8 @@
     <!-----OPEN GRAPH IMG----->
     <meta property="og:img" content="">
     <!-----OPEN GRAPH DESCRIPTION----->
-    <meta property="og:description" content="Contacto de la tienda BJJWEAR para cualquier consulta para tu compra.">
+    <meta property="og:description"
+        content="Tienda en línea especializada en la venta de ropa y equipamiento para la práctica de Brazilian Jiu-Jitsu">
 </head>
 
 <body>
@@ -75,29 +78,29 @@
         </nav>
     </header>
     <main>
-        <section class="formulario-contacto">
-            <form method="post" name="form-de-bjjwear">
-                <h2>Contacto</h2>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+        <div class="product">
+            <h2>KIMONO AZUL</h2>
+            <p>Descripción del producto.</p>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/kimoblanco.png" class="d-block w-100" alt="kimono azul">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/kimoblanco.png" class="d-block w-100" alt="imagen de los detalles en negro del kimono">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" name="telefono" id="telefono">
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
-                </div>
-                <div>
-                    <input type="submit" name="enviar" id="enviar">
-                </div>
-        </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <button class="buy-button">Comprar</button>
+        </div>
     </main>
     <footer>
         <div>
