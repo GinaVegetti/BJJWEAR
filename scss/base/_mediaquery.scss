@@ -29,26 +29,26 @@
             font-size: 20px;
         }
     }
-}
 
-.nosotros-p {
 
-    h2 {
-        font-size: 20px;
-        margin: 15px;
-    }
+    .nosotros-p {
 
-    div {
-        p {
-            margin: 10px;
+        h2 {
+            font-size: 20px;
+            margin: 15px;
         }
 
-        img {
-            margin: 10px;
+        div {
+            p {
+                margin: 10px;
+            }
+
+            img {
+                margin: 10px;
+            }
         }
     }
 }
-
 
 @media screen and (max-width: 850px) {
     .hero {
@@ -85,10 +85,24 @@
 
 
 @media screen and (max-width: 800px) {
+
     .presentacion-nosotros {
         height: 200px;
     }
 
+    .nosotros-p {
+        div {
+            flex-direction: column;
+            p {
+                font-size: 12px;
+            }
+        }
+        .img-nosotros {
+            img {
+                display: none;
+            }
+        }
+    }
 
 
     .formulario-contacto {
@@ -134,6 +148,7 @@
         }
     }
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -301,6 +316,7 @@
         height: 150px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kimono.blanco.jpg);
     }
+
 
     .product {
         .image-carosel {
