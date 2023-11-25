@@ -194,6 +194,35 @@ header {
     font-size: 20px;
     text-align: center; }
 
+.nosotros-p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .nosotros-p h2 {
+    color: #acab9e;
+    font-size: 24px;
+    margin: 20px; }
+  .nosotros-p div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .nosotros-p div p {
+      flex: 1;
+      color: white;
+      font-size: 16px;
+      text-align: justify;
+      margin: 15px; }
+      .nosotros-p div p:last-child {
+        margin-bottom: 0; }
+    .nosotros-p div img {
+      flex: 1;
+      max-width: 100%;
+      max-height: 350px;
+      margin: 15px; }
+
 /*!----------CENTRO DE AYUDA-------*/
 .politica-devolucion {
   width: 100%;
@@ -258,7 +287,7 @@ header {
       text-align: center; }
       .contenedor-galeria .grid-items div a img {
         width: 300px;
-        height: auto;
+        height: 400px;
         transition: transform 0.3s ease; }
         .contenedor-galeria .grid-items div a img:hover {
           transform: scale(1.1); }
@@ -273,7 +302,7 @@ header {
         background-color: rgba(0, 0, 0, 0.7);
         margin: 0; }
 
-/*!--------KIMONO BLANCO-------*/
+/*!--------PRODUCTOS INDIVIDUALES-------*/
 .product {
   max-width: 950px;
   margin: 10px auto;
@@ -284,13 +313,19 @@ header {
     font-size: 24px;
     margin-bottom: 10px; }
   .product p {
-    color: white; }
+    color: white;
+    font-size: 15px;
+    margin: 10px; }
+    .product p span {
+      font-weight: bold;
+      color: #acab9e; }
   .product .image-carousel {
     display: flex;
     overflow: hidden;
     margin-bottom: 20px; }
     .product .image-carousel img {
       width: 100%;
+      height: 400px;
       transition: transform 0.5s ease-in-out; }
     .product .image-carousel img:nth-child(1) {
       order: 1; }
@@ -350,6 +385,16 @@ footer {
       font-size: 40px; }
     .presentacion-nosotros h3 {
       font-size: 20px; } }
+
+.nosotros-p h2 {
+  font-size: 20px;
+  margin: 15px; }
+
+.nosotros-p div p {
+  margin: 10px; }
+
+.nosotros-p div img {
+  margin: 10px; }
 
 @media screen and (max-width: 850px) {
   .hero {
@@ -448,20 +493,16 @@ footer {
       height: 20px; } }
 
 @media screen and (max-width: 550px) {
-  .logo img {
+  header .barra-nav .container-fluid .logo img {
     width: 60px;
     height: 60px; }
-  .nav ul li a {
-    font-size: 10px;
-    margin: 5px; }
-  .form-control {
-    width: 70px;
-    height: 30px;
-    font-size: 10px; } }
+  header .barra-nav .container-fluid .nav .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    margin: 10px; } }
 
 @media screen and (max-width: 500px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/kimono.negro.2.jpg); }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/kimononegrolion2.jpg); }
   .productos .targetas-prod .p-uno img,
   .productos .targetas-prod .p-dos img,
   .productos .targetas-prod .p-tres img,
@@ -470,7 +511,14 @@ footer {
     height: 190px; }
   .presentacion-nosotros {
     height: 150px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kimono.blanco.jpg); } }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/kimono.blanco.jpg); }
+  .product .image-carosel img {
+    height: 300px; }
+  .contenedor-galeria .grid-items div a img {
+    height: 300px; }
+  #imageCarousel .carousel-inner img {
+    max-width: 100%;
+    height: 300px; } }
 
 @media screen and (max-width: 450px) {
   .formulario-contacto h2 {
